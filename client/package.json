@@ -1,0 +1,31 @@
+{
+  "name": "text-emoji",
+  "main": "src/index.js",
+  "author": "macotasu <macotasu@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "",
+  "homepage": "",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.2",
+    "expose-loader": "^0.7.1",
+    "react-sinatra-ujs": "^1.0.1",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.13.3"
+  }
+}

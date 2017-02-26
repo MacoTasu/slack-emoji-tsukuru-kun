@@ -1,0 +1,10 @@
+html
+  head
+    title slack絵文字つくる君
+    script src="js/bundle.js?#{Time.now.to_i}" type="text/javascript"
+  body
+    div class="container"
+      div class="header clearfix"
+        h3 class="text-muted"
+          | Slack絵文字つくる君
+      = yield
