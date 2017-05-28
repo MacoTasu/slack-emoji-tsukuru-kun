@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Preview extends React.Component {
+export default class Preview extends React.Component {
     constructor(props) {
         super();
         this.state = {value: ''};
@@ -17,4 +17,3 @@ class Preview extends React.Component {
 }
 
 import styles from './Preview.css';
-export default Preview;

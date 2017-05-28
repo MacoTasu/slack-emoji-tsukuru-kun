@@ -5,12 +5,15 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    path.join(__dirname, 'src', 'client.js')
+    path.join(__dirname, 'src', 'index.js')
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist', 'js'),
     filename: 'bundle.js',
     publicPath: '/dist/'
+  },
+  resolve: {
+    extensions: ['', '.js']
   },
   module: {
     loaders: [
