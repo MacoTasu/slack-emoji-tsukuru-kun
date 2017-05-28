@@ -7,7 +7,10 @@
   "description": "",
   "homepage": "",
   "scripts": {
-    "build": "webpack --config ./webpack.config.js"
+    "start": "node server/app.js",
+    "build": "npm run build:js && npm run build:pug",
+    "build:js": "webpack --config ./webpack.config.js",
+    "build:pug": "pug src/views/*.pug -o dist/"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
@@ -23,9 +26,15 @@
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.2",
     "expose-loader": "^0.7.1",
+    "express": "^4.15.3",
+    "jsx-loader": "^0.13.2",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6",
     "react-sinatra-ujs": "^1.0.1",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0"
   }
 }

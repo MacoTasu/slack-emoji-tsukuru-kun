@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Canvas extends React.Component {
+export default class Canvas extends React.Component {
     constructor(props) {
         super();
         this.state = {value: ''};
@@ -14,4 +14,3 @@ class Canvas extends React.Component {
 }
 
 import styles from './Canvas.css';
-export default Canvas;

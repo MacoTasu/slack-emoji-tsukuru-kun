@@ -1,7 +1,7 @@
 import React from 'react';
-import Canvas from '../Canvas';
+import Canvas from './Canvas';
 
-class TextBox extends React.Component {
+export default class TextBox extends React.Component {
     constructor(props) {
         super(props);
         this.state = {text: '', color: '#545454', size: '200'};
@@ -78,5 +78,3 @@ class TextBox extends React.Component {
         );
     }
 }
-
-export default TextBox;
